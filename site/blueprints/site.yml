@@ -1,0 +1,21 @@
+title: Site
+fields:
+  email:
+    label: Contact Email
+    type: email
+  address:
+    label: Address
+    type: text
+  phone:
+    label: Phone Number
+    type: tel
+  social:
+    label: Social Media Links
+    type: structure
+    fields:
+      platform:
+        label: Platform Name
+        type: text
+      url:
+        label: URL
+        type: url

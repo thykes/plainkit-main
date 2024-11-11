@@ -1,0 +1,27 @@
+Title: Site Title
+
+----
+
+Email: tim@timhykes.com
+
+----
+
+Address: 1400 Montana Ave NE
+
+----
+
+Phone: (314) 696-3079
+
+----
+
+Social:
+
+- 
+  platform: LinkedIn
+  url: https://www.linkedin.com/in/timhykes/
+- 
+  platform: Instagram
+  url: https://www.instagram.com/maxdelaro/
+- 
+  platform: Twitter
+  url: https://x.com/timothyhykes

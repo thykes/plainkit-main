@@ -1,0 +1,21 @@
+title: Home
+fields:
+  portfolioItems:
+    label: Portfolio Items
+    type: structure
+    fields:
+      title:
+        label: Project Title
+        type: text
+      image:
+        label: Project Image
+        type: files
+      link:
+        label: Project Link
+        type: url
+      category:
+        label: Project Category
+        type: text
+      year:
+        label: Project Year
+        type: number
