@@ -1,21 +1,28 @@
 title: Site
-fields:
-  email:
-    label: Contact Email
-    type: email
-  address:
-    label: Address
-    type: text
-  phone:
-    label: Phone Number
-    type: tel
-  social:
-    label: Social Media Links
-    type: structure
+sections:
+  pages:
+    type: pages
+    headline: Pages
+    status: all
+  navigation:
+    type: fields
+    headline: Site Navigation
     fields:
-      platform:
-        label: Platform Name
-        type: text
-      url:
-        label: URL
+      logo:
+        label: Site Logo
+        type: files
+        multiple: false
+        template: image
+        required: true
+  social:
+    type: fields
+    headline: Social Media Links
+    fields:
+      linkedin:
+        label: LinkedIn
         type: url
+      twitter:
+        label: Twitter
+        type: url
+      instagram:
+        label: Instagram
