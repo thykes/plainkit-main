@@ -1,42 +1,62 @@
 title: Blog
-icon: 📚
+preset: page
 
-columns:
-  left:
-    width: 1/2
-    sections:
-      drafts:
-        type: pages
-        status: draft
-        template: article
-        image:
-          query: page.heroImage.toFile
-        text: >
-          {{ page.title }}
-          {{ page.category }}
-          {{ page.date.toDate('d M, Y') }}
+fields:
+  headline:
+    label: Headline
+    type: text
+  intro:
+    label: Introduction
+    type: textarea
 
-      unlisted:
-        type: pages
-        status: unlisted
-        template: article
-        image:
-          query: page.heroImage.toFile
-        text: >
-          {{ page.title }}
-          {{ page.category }}
-          {{ page.date.toDate('d M, Y') }}
+sections:
+  drafts:
+    label: Drafts
+    type: pages
+    status: draft
+    templates:
+      - blog-post
+    sortBy: date desc
+    layout: cards
+    image:
+      query: page.heroImage.toFile
+      cover: true
+      ratio: 3/2
+    info: >
+      {{ page.date.toDate('d M, Y') }} – {{ page.category.or('Uncategorized') }}
+    text: >
+      {{ page.title }}
 
-  right:
-    width: 1/2
-    sections:
-      listed:
-        type: pages
-        status: listed
-        template: article
-        image:
-          query: page.heroImage.toFile
-        text: >
-          {{ page.title }}
-          {{ page.category }}
-          {{ page.date.toDate('d M, Y') }}
+  inReview:
+    label: In Review
+    type: pages
+    status: unlisted
+    templates:
+      - blog-post
+    sortBy: date desc
+    layout: cards
+    image:
+      query: page.heroImage.toFile
+      cover: true
+      ratio: 3/2
+    info: >
+      {{ page.date.toDate('d M, Y') }} – {{ page.category.or('Uncategorized') }}
+    text: >
+      {{ page.title }}
+
+  published:
+    label: Published
+    type: pages
+    status: listed
+    templates:
+      - blog-post
+    sortBy: date desc
+    layout: cards
+    image:
+      query: page.heroImage.toFile
+      cover: true
+      ratio: 3/2
+    info: >
+      {{ page.date.toDate('d M, Y') }} – {{ page.category.or('Uncategorized') }}
+    text: >
+      {{ page.title }}

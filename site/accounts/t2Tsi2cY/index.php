@@ -3,6 +3,6 @@
 return [
     'email' => 'tim@timhykes.com',
     'language' => 'en',
-    'name' => '',
+    'name' => 'Tim Hykes',
     'role' => 'admin'
 ];

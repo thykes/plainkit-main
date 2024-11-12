@@ -1,0 +1,9 @@
+Title: Blog
+
+----
+
+Template: blog
+
+----
+
+Uuid: Dcbn0agBpw9Km57q

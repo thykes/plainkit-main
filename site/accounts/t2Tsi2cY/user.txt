@@ -1,0 +1,13 @@
+Profileimage: - file://U2yKV6xUgTKOosbl
+
+----
+
+Bio: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.!
+
+----
+
+Social:
+
+- 
+  platform: linkedin
+  url: https://www.linkedin.com/in/timhykes/

@@ -1,0 +1,52 @@
+title: Admin User
+icon: user
+
+fields:
+  profileImage:
+    label: Profile Picture
+    type: files
+    max: 1
+    help: Upload your profile picture.
+  
+  name:
+    label: Full Name
+    type: text
+    required: true
+    help: Enter your full name.
+  
+  bio:
+    label: Bio
+    type: textarea
+    help: A short bio about yourself.
+
+  social:
+    label: Social Media Profiles
+    type: structure
+    fields:
+      platform:
+        label: Platform
+        type: select
+        options:
+          facebook: Facebook
+          twitter: Twitter
+          linkedin: LinkedIn
+          instagram: Instagram
+          github: GitHub
+          other: Other
+      url:
+        label: Profile URL
+        type: url
+        help: Enter the full URL of your social media profile.
+
+# Optional section to show user information in the panel more clearly
+tabs:
+  main:
+    label: Main Information
+    sections:
+      profileInfo:
+        type: fields
+        fields:
+          profileImage
+          name
+          bio
+          social
