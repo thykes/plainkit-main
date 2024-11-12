@@ -1,0 +1,42 @@
+title: Blog
+icon: 📚
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      drafts:
+        type: pages
+        status: draft
+        template: article
+        image:
+          query: page.heroImage.toFile
+        text: >
+          {{ page.title }}
+          {{ page.category }}
+          {{ page.date.toDate('d M, Y') }}
+
+      unlisted:
+        type: pages
+        status: unlisted
+        template: article
+        image:
+          query: page.heroImage.toFile
+        text: >
+          {{ page.title }}
+          {{ page.category }}
+          {{ page.date.toDate('d M, Y') }}
+
+  right:
+    width: 1/2
+    sections:
+      listed:
+        type: pages
+        status: listed
+        template: article
+        image:
+          query: page.heroImage.toFile
+        text: >
+          {{ page.title }}
+          {{ page.category }}
+          {{ page.date.toDate('d M, Y') }}
