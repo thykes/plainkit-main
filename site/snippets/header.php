@@ -283,3 +283,6 @@
          <!-- header top area end -->
    
       </header>
+      
+   <div id="smooth-wrapper">
+      <div id="smooth-content">

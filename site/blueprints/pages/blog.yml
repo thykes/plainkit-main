@@ -14,8 +14,9 @@ sections:
     label: Drafts
     type: pages
     status: draft
+    create: article  # Ensures new pages created in this section use the 'article' template
     templates:
-      - blog-post
+      - article
     sortBy: date desc
     layout: cards
     image:
@@ -31,8 +32,9 @@ sections:
     label: In Review
     type: pages
     status: unlisted
+    create: article  # Ensures new pages created in this section use the 'article' template
     templates:
-      - blog-post
+      - article
     sortBy: date desc
     layout: cards
     image:
@@ -48,8 +50,9 @@ sections:
     label: Published
     type: pages
     status: listed
+    create: article  # Ensures new pages created in this section use the 'article' template
     templates:
-      - blog-post
+      - article
     sortBy: date desc
     layout: cards
     image:
